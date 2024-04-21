@@ -1,4 +1,4 @@
-//preprocessor directives
+//Preprocessor directives
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -18,7 +18,7 @@ struct TransactionItem {
     double pricePerUnit;
 };
 
-// DECLARATION of arrays to store sales data
+// Declaration of arrays to store sales data
 string transactionNo[MAX_TRANSACTIONS];
 string customerName[MAX_TRANSACTIONS];
 TransactionItem items[MAX_TRANSACTIONS][MAX_ITEMS_PER_TRANSACTION];
@@ -152,7 +152,7 @@ void recordSales() {
     }
 }
 
-//Function to calculate total revenue
+// Function to calculate total revenue
 void calculateTotalRevenue ()
 {
 	int totalCookiePurchased = 0;
@@ -205,7 +205,7 @@ void updatedSalesRecord(string searchCustomerName) {
         if (transactions[i].customerName == searchCustomerName) {
             foundCustomer = true;
 
-            // display transaction details
+            // Display transaction details
             cout << "Transaction No: " << transactions[i].transactionNo << endl;
             cout << "Customer Name: " << transactions[i].customerName << endl;
 
@@ -318,11 +318,11 @@ cout << "|      5      |   Update Sales Record    |" << endl;
 cout << "|      6      |         Exit             |" << endl;
 cout << "+----------------------------------------+" << endl;
 
-// the staff enter the number to select the option for menu
+// The staff enter the number to select the option for menu
     cout << "\n Select The Number (Enter Number 1-6): ";
     cin >> choice;
 
-    // the systems will detect what user choose
+    // The systems will detect what user choose
      string mainmenu;
       switch (choice) {
         case 1:
@@ -362,6 +362,6 @@ cout << "+----------------------------------------+" << endl;
 
     } while (choice != 6);
 
-    return 0;
+    return 0;//End of the code
 
 }
