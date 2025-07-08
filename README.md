@@ -1,4 +1,4 @@
-# 🍪 Cookie Monsta Sales Management System
+# Cookie Monsta Sales Management System 🍪
 
 A simple C++ console-based application to help track cookie sales, manage customer transactions, and calculate total revenue. Built for cookie business staff to make sales recording and reporting fast and easy!
 
